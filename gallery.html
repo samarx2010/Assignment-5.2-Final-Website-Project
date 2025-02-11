@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Commission Gallery</title> <!--Title of Webpage-->
+    <div class="banner"></div>
+</head>
+<body>
+    <!--Creates sidebar navigation menu-->
+    <div class="sidebar">
+        <a href="Final Project_Homepage.html"> <!--Logo is clickable to show the homepage on the sidebar navigation menu-->
+        <div class="Homelogo">
+            <img src="Logo for Sam's Studio_Small.png" alt="Logo">
+        </a>
+        </div>
+            <h1>Menu</h1>
+            <ul>
+                <li><a href="Final Project_Homepage.html">Home</a></li>
+                <li><a href="About.html">About Me</a></li>
+                <li><a href="Pricing.html">Pricing</a></li>
+                <li><a href="Contact Me.html">Contact Me</a></li>
+                <li><a href="FAQs.html">FAQs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                
+            </ul>
+        </div>
+    
+ <main>
+    
+    <div class="gallerytextcolor"> <!--Heading Title Page of Gallery-->
+
+        <p>Gallery of Commissions</p>
+        <div class="banner2"></div>
+    </div>
+    <div class="slideshow-container"> <!--Slideshow presentation-->
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="Arcane Season 2 Jinx.jpg" style="width:100%">
+            <div class="text">Arcane's Jinx</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="Frieren.jpg" style="width:100%">
+            <div class="text">Frieren from a Anime</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="Curly and His Future.jpg" style="width:100%">
+            <div class="text">Curly from Mouthwashing</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="Vi Arcane Season 2 Edit 2.jpg" style="width:100%">
+            <div class="text">Arcane's Vi</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="Isaac Clarke Ver2.jpg" style="width:100%">
+            <div class="text">Isaac Clarke from Deadspace</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="Tech Bad Batch.jpg" style="width:100%">
+            <div class="text">Tech from Star War's Bad Batch</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center"> <!--Variables for the Slideshow Presentation-->
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+    <script src="scripts.js"></script>  <!--Additional scripts to make presentation loop-->
+
+</main>
+<footer class="footer">
+    &copy; 2025 Sam's Studio. All rights reserved.</p><!-- Footer content goes here -->
+   
+</footer>
+</body>
+</html>

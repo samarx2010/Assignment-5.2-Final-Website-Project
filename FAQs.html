@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> <!--specifies the character encoding for the document.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--used to control the layout and scaling of a webpage on different devices, especially mobile devices. 
+    This tag is crucial for responsive web design, ensuring that web pages render well on a variety of devices and window or screen sizes.-->
+    <title>FAQs</title>
+    <link rel="stylesheet" href="style.css">
+    <div class="banner"></div>
+</head>
+<body>
+    <!--Creates sidebar navigation menu-->
+    <div class="sidebar">
+        <a href="Final Project_Homepage.html"> <!--Logo is clickable to show the homepage on the sidebar navigation menu-->
+        <div class="Homelogo">
+            <img src="Logo for Sam's Studio_Small.png" alt="Logo">
+        </a>
+        </div>
+        <h1>Menu</h1>
+        <ul>
+            <li><a href="Final Project_Homepage.html">Home</a></li>
+            <li><a href="About.html">About Me</a></li>
+            <li><a href="Pricing.html">Pricing</a></li>
+            <li><a href="Contact Me.html">Contact Me</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+    
+            
+        </ul>
+    </div>
+    <main>
+
+        <div class="FAQstextcolor"> <!--Text Color for this webpage-->
+        
+        <p>Frequently Asked Questions</p>
+        
+        </div>
+        <div class="banner2"></div> <!--Global class for design layout of banners on the screen-->
+           
+        <div class="FAQimage-container">
+            <img src="Bani Redraw 2025 UPDATE.png" alt="Centered Image">
+
+            <div class="FAQstextcolor"> <!--Text Color for this webpage-->
+        
+                <p>Some frequently asked questions about my policies for commissions.</p>
+                
+                </div>
+        
+        <div id="section1" class="FAQcontainer"> <!--Questions for FAQ page with clickable drop down answers-->
+                <div class="faq">
+                    <h3>Do you need to pay upfront in full?</h3>
+                    <p>Yes, because you are paying for the usage of my materials and for my time.</p>
+                </div>
+            </div>
+            <div id="section2" class="FAQcontainer">
+                <div class="faq">
+                    <h3>Can I cancel my commission half way through?</h3>
+                    <p>No, it's not common place to do so and your payment is not going to be refunded because half of your drawing will already be done.</p>
+                </div>
+            </div>
+            
+            <div id="section3" class="FAQcontainer">
+                <div class="faq">
+                    <h3>Can I cancel my commission in the beginning processes?</h3>
+                    <p>Yes, as long as I am given ample time to cancel your request.</p>
+                </div>
+            </div>
+
+            <div id="section4" class="FAQcontainer">
+                <div class="faq">
+                    <h3>Is there anything you can't draw?</h3>
+                    <p>I cannot draw anthros or furries currently at the moment.</p>
+                </div>
+            </div>
+        </div>
+
+        </main>
+        
+        <!--FAQ when questions are clicked, it drops down sentence text-->
+        <script>   
+            document.querySelectorAll('.faq h3').forEach((faqHeader) => {
+                faqHeader.addEventListener('click', () => {
+                    faqHeader.nextElementSibling.style.display = faqHeader.nextElementSibling.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+        </script>
+</body>
+<footer class="footer">
+    &copy; 2025 Sam's Studio. All rights reserved.</p><!-- Footer content goes here -->
+   
+</footer>
+</html>
+
